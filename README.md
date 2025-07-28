@@ -79,7 +79,7 @@ crime-pattern-clustering
 ### 🔧 Setup
 1. Clone the repo
    ```bash
-   git clone https://github.com/yourusername/crime-pattern-clustering.git
+   git clone https://github.com/Shreiya-Muthuvelan/Crime-Pattern-Clustering.git
    cd crime-pattern-clustering
 2. Install required libraries
    ```bash
