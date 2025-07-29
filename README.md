@@ -2,7 +2,8 @@
 
 Uncovering hidden patterns in LA crime data using unsupervised learning.
 
-This project applies clustering and geospatial analysis to identify **crime hotspots** in Los Angeles using historical data. It enables **data-driven patrol planning** and area-wise **crime risk scoring** to support city-wide safety strategies.
+This project applies clustering and geospatial analysis to identify **crime hotspots** in Los Angeles using historical data.
+It enables **data-driven patrol planning** and area-wise **crime risk scoring** to support city-wide safety strategies.
 
 ---
 
