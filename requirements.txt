@@ -1,7 +1,6 @@
-pandas 
+pandas
 matplotlib
-seaborn 
-sklearn
+seaborn
+scikit-learn
 folium
-os 
 gdown
