@@ -70,6 +70,8 @@ crime-pattern-clustering
 | ├── cluster.py
 | ├── visualization.py
 | ├── preprocess.py
+├── utils/
+| ├── download_data.py
 ├── main.py
 ├── requirements.txt
 ```
