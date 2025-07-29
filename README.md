@@ -83,7 +83,7 @@ crime-pattern-clustering
    cd crime-pattern-clustering
 2. Install required libraries
    ```bash
-   pip install requirements.txt
+   pip install -r requirements.txt
 3. Download dataset
    ```bash
    python utils/download_data.py
