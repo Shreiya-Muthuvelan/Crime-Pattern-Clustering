@@ -8,7 +8,7 @@ It enables **data-driven patrol planning** and area-wise **crime risk scoring** 
 
 ---
 
-##  Dataset
+## 🗃️ Dataset
 
 - **Source**: [Los Angeles Crime Data](https://www.kaggle.com/datasets/hemil26/crime-in-los-angeles)
 - **Size**: ~963,000 crime records
