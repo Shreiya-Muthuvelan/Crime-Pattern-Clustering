@@ -54,7 +54,7 @@ Highlights significant clusters of criminal activity.
 ##  Project Structure
 ```
 crime-pattern-clustering
-├── data/ # Contains downaloded dataset
+├── data/ # Contains downloaded dataset
 ├── outputs/ # Outputs are saved here 
 ├── src/
 | ├── cluster.py
