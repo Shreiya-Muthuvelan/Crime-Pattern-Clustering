@@ -1,81 +1,55 @@
-# Crime Pattern Clustering — Detecting Crime Hotspots in Los Angeles
+# Crime Pattern Clustering 🕵️‍♂️📍
+
+Detecting Crime Hotspots in Los Angeles Using Machine Learning and Geospatial Analysis
+
+## Table of Contents
+- [Project Description](#project-description)
+- [Methodology](#methodology)
+- [Screenshots & Visualizations](#screenshots--visualizations)
+- [Technologies & Tools](#technologies--tools)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
 
 
-## Project Objective
+## Project Description
+Crime poses significant safety and resource challenges in urban environments like Los Angeles. This project leverages unsupervised machine learning and geospatial analysis to identify spatial and temporal crime hotspots.
 
-Crime poses significant safety and resource challenges in urban environments such as Los Angeles. This project aims to leverage unsupervised machine learning and geospatial analysis to identify spatial and temporal **crime hotspots** within the city. These insights serve to enhance patrol planning, risk assessment, and policy decisions to improve public safety.
+The insights generated can assist law enforcement with:
+- Patrol planning
+- Risk assessment
+- Policy decisions
 
----
-
-## Dataset Information
-
-- **Source:** [Los Angeles Crime Data (Kaggle)](https://www.kaggle.com/datasets/hemil26/crime-in-los-angeles)  
-- **Size:** Approximately 963,000 crime records  
-- **Key Features Used:**  
-  - Location: Latitude (`LAT`), Longitude (`LON`)  
-  - Time: Date of Occurrence (`DATE OCC`), Time of Occurrence (`TIME OCC`)  
-  - Crime Details: Crime Code (`Crm Cd`), Weapon Used, Crime Description  
-  - Victim Information, Crime Status, Police Area, etc.  
-
-The dataset covers multiple years and contains rich spatio-temporal and categorical data useful for clustering and pattern analysis.
-
----
-
-## Data Preprocessing
-
-The raw data underwent thorough preprocessing to facilitate effective clustering:
-
-- Cleaning missing or inconsistent entries  
-- Engineering features such as hour and day of week  
-- Encoding categorical variables using label encoding  
-- Scaling numerical features for uniformity  
-- Dimensionality reduction through Principal Component Analysis (PCA)  
-
----
+## Features
+- Detects high-crime clusters using K-Means Clustering
+- Provides a crime risk score (0–100) for different areas
+- Interactive maps and visualizations of crime patterns
+- Explores temporal trends (hour of day, day of week)
+- Scalable and reproducible data preprocessing pipeline
 
 ## Methodology
+- **K-Means Clustering:** Identifies crime clusters from spatial, temporal, and categorical features
+- **PCA:** Reduces dimensionality for visualization and cluster validation
+- **Evaluation:** Cross-checked clusters against temporal and spatial patterns to ensure meaningful hotspot detection
 
-The analytical pipeline consists of:
+## Screenshots & Visualizations
 
-- **K-Means Clustering** performed on a combination of temporal, spatial, and categorical features to detect crime clusters  
-- **PCA** applied to reduce dimensionality and aid in exploratory visualization  
-- Evaluation of cluster distributions against geographical and temporal patterns to validate hotspot detection  
-
----
-
-## Exploratory Data Analysis
-
-### Interactive Crime Distribution Map (`crime_map.html`)
-
-This map visualizes individual crime incidents across Los Angeles, illustrating spatial distributions prior to clustering.  
-
-- Generated from the final cell in `notebooks/eda.ipynb`  
-- Opens automatically in a web browser after notebook execution  
-
-**Preview:**  
+**Interactive Crime Distribution Map**  
+Visualizes individual crime incidents across Los Angeles.  
 <img src="crime_map.jpg" width="600" alt="Crime Map Preview">
 
----
+**Crime Risk Score by Area**  
+Assigns a score (0–100) based on total crime counts.  
+<img src="risk_score_by_area.png" width="500" alt="Risk Score by Area">
 
-## Visualizations
+**Crime Hotspot Map**  
+Highlights significant clusters of criminal activity.  
+<img src="crime_hotspot_map.jpg" width="500" alt="Crime Hotspot Map">
 
-- **Crime Risk Score by Area:**  
-  Assigns a risk score (0–100) to city areas based on total crime counts.  
-  <img src="risk_score_by_area.png" width="500" alt="Risk Score by Area">
+## Technologies & Tools
+- **Languages:** Python 3.11
+- **Libraries:** Pandas, NumPy, Matplotlib, Scikit-learn, Folium
+- **Machine Learning:** K-Means Clustering, PCA
 
-- **Crime Hotspot Map:**  
-  Highlights significant clusters of criminal activity within the city.  
-  <img src="crime_hotspot_map.jpg" width="500" alt="Crime Hotspot Map">
-
----
-
-## Evaluation and Insights
-
-- Identification of high crime density clusters consistent with official reports  
-- Temporal trends showing increased night-time and weekend crime rates  
-- Risk scores emphasize concentration disparities that can inform resource allocation  
-
----
 
 ##  Project Structure
 ```
@@ -91,9 +65,8 @@ crime-pattern-clustering
 ├── main.py
 ├── requirements.txt
 ```
----
 
-## Uage
+## Usage
 
 1. Clone the repo
    ```bash
