@@ -1,37 +1,57 @@
 # Crime Pattern Clustering 🕵️‍♂️📍
 
-Detecting Crime Hotspots in Los Angeles Using Machine Learning and Geospatial Analysis
+Data-driven identification of crime hotspots in Los Angeles using unsupervised learning and geospatial analysis.
 
 ## Table of Contents
-- [Project Description](#project-description)
+- [Overview](#overview)
+- [Data Source](#data-source)
+- [Objectives](#objectives)
 - [Methodology](#methodology)
-- [Screenshots & Visualizations](#screenshots--visualizations)
+- [Visualizations](#visualizations)
 - [Technologies & Tools](#technologies--tools)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 
+## Overview
+This project analyzes historical crime data from Los Angeles to uncover spatial and temporal patterns of criminal activity.
 
-## Project Description
-Crime poses significant safety and resource challenges in urban environments like Los Angeles. This project leverages unsupervised machine learning and geospatial analysis to identify spatial and temporal crime hotspots.
+Using unsupervised machine learning and geospatial analysis, it identifies high-risk areas and summarizes crime intensity across regions.
 
-The insights generated can assist law enforcement with:
-- Patrol planning
-- Risk assessment
-- Policy decisions
+## Data Source
+The analysis is based on the **Los Angeles Crime Data (2020–2023)** dataset, which contains reported crime incidents in the City of Los Angeles from 2020 onwards.  
 
-## Features
-- Detects high-crime clusters using K-Means Clustering
-- Provides a crime risk score (0–100) for different areas
-- Interactive maps and visualizations of crime patterns
-- Explores temporal trends (hour of day, day of week)
-- Scalable and reproducible data preprocessing pipeline
+The dataset is publicly available on Kaggle: [Los Angeles Crime Data 2020–2023](https://www.kaggle.com/datasets/venkatsairo4899/los-angeles-crime-data-2020-2023)
+
+## Objectives
+* Identify spatial crime hotspots within the city of Los Angeles.
+
+* Quantify crime intensity via an interpretable risk score for different areas.
+
+* Explore temporal trends in crime (hour of day, day of week) to support operational planning.
+
 
 ## Methodology
-- **K-Means Clustering:** Identifies crime clusters from spatial, temporal, and categorical features
-- **PCA:** Reduces dimensionality for visualization and cluster validation
-- **Evaluation:** Cross-checked clusters against temporal and spatial patterns to ensure meaningful hotspot detection
+* **Feature engineering**
 
-## Screenshots & Visualizations
+   * Derived spatial features from location coordinates.
+
+   * Extracted temporal features such as hour of occurrence and day of week.
+
+   * Encoded relevant categorical variables for clustering.
+
+* **Clustering**
+
+   * Applied K-Means clustering to group crime incidents into spatial–temporal clusters.
+
+   * Used Principal Component Analysis (PCA) for dimensionality reduction and cluster visualization.
+
+* **Cluster assessment**
+
+   * Assessed cluster quality and interpretability through spatial distributions and temporal profiles.
+
+   * Validated that resulting clusters correspond to meaningful crime hotspots and patterns.
+
+## Visualizations
 
 **Interactive Crime Distribution Map**  
 Visualizes individual crime incidents across Los Angeles.  
@@ -47,8 +67,9 @@ Highlights significant clusters of criminal activity.
 
 ## Technologies & Tools
 - **Languages:** Python 3.11
-- **Libraries:** Pandas, NumPy, Matplotlib, Scikit-learn, Folium
-- **Machine Learning:** K-Means Clustering, PCA
+- **Data & analysis:** pandas, NumPy
+- **Machine Learning:** scikit-learn (K-Means,PCA)
+- **Visualization & mapping:** Matplotlib,Folium
 
 
 ##  Project Structure
