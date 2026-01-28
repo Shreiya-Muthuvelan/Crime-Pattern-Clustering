@@ -23,10 +23,9 @@ The analysis is based on the **Los Angeles Crime Data (2020–2023)** dataset, w
 The dataset is publicly available on Kaggle: [Los Angeles Crime Data 2020–2023](https://www.kaggle.com/datasets/venkatsairo4899/los-angeles-crime-data-2020-2023)
 
 ## Objectives
+
 * Identify spatial crime hotspots within the city of Los Angeles.
-
 * Quantify crime intensity via an interpretable risk score for different areas.
-
 * Explore temporal trends in crime (hour of day, day of week) to support operational planning.
 
 
@@ -34,21 +33,17 @@ The dataset is publicly available on Kaggle: [Los Angeles Crime Data 2020–2023
 * **Feature engineering**
 
    * Derived spatial features from location coordinates.
-
    * Extracted temporal features such as hour of occurrence and day of week.
-
    * Encoded relevant categorical variables for clustering.
 
 * **Clustering**
 
    * Applied K-Means clustering to group crime incidents into spatial–temporal clusters.
-
    * Used Principal Component Analysis (PCA) for dimensionality reduction and cluster visualization.
 
 * **Cluster assessment**
 
    * Assessed cluster quality and interpretability through spatial distributions and temporal profiles.
-
    * Validated that resulting clusters correspond to meaningful crime hotspots and patterns.
 
 ## Visualizations
